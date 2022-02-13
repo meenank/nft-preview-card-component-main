@@ -66,13 +66,10 @@ body {
 
 .card .images .big-image:hover,
 .big-image:active {
-    opacity: 0.6;
+    opacity: 0.4;
     transition: 0.5s;
     background-color: var(--Cyan);
     cursor: pointer;
-    .eye {
-        opacity: 1;
-    }
 }
 
 .card h3 {
