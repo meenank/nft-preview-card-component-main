@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root {
+    /* primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* neutral */
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    /*(main BG) */
+    --Veryy-dark-blue: hsl(216, 50%, 16%);
+    /* (card BG) */
+    --Veryyy-dark-Blue: hsl(215, 32%, 27%);
+    /* (line) */
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-dark-blue);
+}
+
+.attribution {
+    color: var(--Cyan);
+}
+
+.card {
+    background-color: var(--Veryy-dark-blue);
+    max-width: 20%;
+    margin: 4rem auto;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.card .big-image {
+    max-width: 100%;
+    border-radius: .5rem;
+}
+
+.card h3 {
+    color: var(--White);
+    font-size: 1.5em;
+}
+
+.card .first-para {
+    color: var(--Soft-blue);
+    font-size: large;
+}
+
+
+/* ------------------------------------------------------------- */
+
+.card .cont {
+    color: var(--Soft-blue);
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Veryyy-dark-Blue);
+    margin-bottom: 1rem;
+}
+
+.card .cont p {
+    display: flex;
+    /* border: 1px solid red; */
+    flex-flow: row nowrap;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.card .cont .one {
+    font-weight: 700;
+}
+
+
+/* .card .cont img,
+p {
+    border: 2px solid red;
+} */
+
+
+/* ------------------------------------------------------------- */
+
+.ownership {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 10%;
+    border: 1px solid var(--White);
+    border-radius: 1rem;
+}
+
+.owner {
+    color: var(--Soft-blue);
+    margin-left: 1rem;
+}
+
+.owner span {
+    color: var(--White);
+}
