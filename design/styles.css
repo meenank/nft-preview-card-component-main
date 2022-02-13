@@ -28,6 +28,21 @@ body {
     margin: 4rem auto;
     border-radius: 1rem;
     padding: 1.5rem;
+    -webkit-box-shadow: 0px 6px 34px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 6px 34px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 6px 34px -6px rgba(0, 0, 0, 0.75);
+}
+
+.card .images {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.card .big-image,
+.eye {
+    grid-row: 1/2;
+    grid-column: 1/2;
 }
 
 .card .big-image {
@@ -35,9 +50,40 @@ body {
     border-radius: .5rem;
 }
 
+.card .images .eye {
+    /* border: 1px solid red; */
+    align-self: center;
+    margin: auto;
+    background-color: var(--Cyan);
+    padding: 42%;
+    border-radius: .6rem;
+}
+
+
+/* .card .images .eye:hover {
+    opacity: 1;
+} */
+
+.card .images .big-image:hover,
+.big-image:active {
+    opacity: 0.6;
+    transition: 0.5s;
+    background-color: var(--Cyan);
+    cursor: pointer;
+    .eye {
+        opacity: 1;
+    }
+}
+
 .card h3 {
     color: var(--White);
-    font-size: 1.5em;
+    font-size: 1.3em;
+}
+
+.card h3:hover,
+h3:active {
+    color: var(--Cyan);
+    cursor: pointer;
 }
 
 .card .first-para {
@@ -98,4 +144,10 @@ p {
 
 .owner span {
     color: var(--White);
+}
+
+.owner span:hover,
+span:active {
+    color: var(--Soft-blue);
+    cursor: pointer;
 }
